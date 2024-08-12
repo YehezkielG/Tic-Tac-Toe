@@ -1,0 +1,185 @@
+.charakter {
+    display: inline-block;
+}
+
+.charakter img {
+    width: 120px;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.header img {
+    width: 40px;
+    filter: drop-shadow(1px 1px 1.5px white);
+}
+.btn {
+    width: 170px;
+    height: 170px;
+    border: 4px solid #6b7885;
+    font-family: jose;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+}#Player1Score, #Player2Score{
+    font-size: 25px; font-family: chakra;
+}
+.scoreView {
+    margin: 0 10px;
+}.repeat img{
+    width: 40px;;
+    cursor: pointer;
+    -webkit-animation: repeatAnimation 3s linear 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.5s;
+}
+.header {
+    color: white;
+    height: 5vh;
+    padding: 25px;
+    position: absolute;
+    top: 0px;
+    width: 70%;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: inclusive;
+}
+
+#Card {
+    background: rgba(2, 6, 20, 0.7);
+    color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 30px;
+    text-align: center;
+    border: white 1PX solid;
+    transition: 1s;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    padding: 20px;
+    display: none;
+    background: rgba(0, 0, 0, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.container {
+    background-color: #101b27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+}
+
+.btn:nth-child(1),
+.btn:nth-child(4),
+.btn:nth-child(7) {
+    border-left: none;
+}
+
+.btn:nth-child(1),
+.btn:nth-child(2),
+.btn:nth-child(3) {
+    border-top: none;
+}
+
+.btn:nth-child(3),
+.btn:nth-child(6),
+.btn:nth-child(9) {
+    border-right: none;
+}
+
+.btn:nth-child(7),
+.btn:nth-child(8),
+.btn:nth-child(9) {
+    border-bottom: none;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px;
+    background: #1b2837;
+}
+
+@media screen and (max-width:578px) {
+    .container {
+        width: 100%;
+    }
+
+    .btn {
+        width: 120px;
+        height: 120px;
+    }
+
+    .charakter img {
+        width: 90px;
+    }
+    .timer{
+        position: absolute;
+        top: 650px;
+    }
+    #TimeEnd{
+    font-weight: bold;}
+
+}
+@-webkit-keyframes repeatAnimation{
+    from {
+      -webkit-transform: rotate(0deg)
+    }
+    to {
+      -webkit-transform: rotate(360deg)
+    }
+  }
+  
+
+@font-face {
+    font-family: inclusive;
+    src: url(../font/InclusiveSans-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../font/Raleway-VariableFont_wght.woff) format("woff");
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../font/Nunito-VariableFont_wght.woff) format("woff");
+}
+
+@font-face {
+    font-family: jose;
+    src: url(../font/JosefinSans-VariableFont_wght.woff) format("woff");
+}
+@font-face {
+    font-family: chakra;
+    src: url(../font/ChakraPetch-Medium.woff) format("woff");
+}

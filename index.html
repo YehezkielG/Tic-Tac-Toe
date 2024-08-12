@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="header">
+        <div  style="display: flex; align-items: center; justify-content: space-around; width: 200px; "> 
+               <div>
+                <center><img src="user.png" alt="USER"><br><a>Player 1 </a></center>
+               </div> 
+            <span id="Player1Score">0</span>
+        </div>
+            <div class="timer">
+                <span id="minute">00</span> : <span id="second">00</span>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-around;  width: 200px;">
+                <span id="Player2Score">0</span>
+                <div>
+                    <center><img src="user.png" alt="USER"><br><a>Player 2 </a></center>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="table">
+            <button value="1" class="btn" id="btn1"></button>
+            <button value="2" class="btn" id="btn2"></button>
+            <button value="3" class="btn" id="btn3"></button>
+            <button value="4" class="btn" id="btn4"></button>
+            <button value="5" class="btn" id="btn5"></button>
+            <button value="6" class="btn" id="btn6"></button>
+            <button value="7" class="btn" id="btn7"></button>
+            <button value="8" class="btn" id="btn8"></button>
+            <button value="9" class="btn" id="btn9"></button>
+        </div>
+    </div>
+    <script src="javasctript/script.js"></script>
+    <div class="popup" id="popUp">
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <div class="Card" id="Card">
+                    <p id="winner"></p>
+                    <p>Game ends in</p>
+                    <hr>
+                    <a id="TimeEnd"></a>
+                    <hr>
+                    <p>Wanna Replay ?</p>
+                    <p class="repeat"><img src="repeat.png" id="repeatImg" onclick="repeatBtnPressed()"></p>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>

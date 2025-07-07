@@ -9,6 +9,7 @@ a website to play tic tac toe with your real player opponent
 # Features
 1. A timer that will count the length of the match
 2. two players game mode
+3. show a score, each player
 
 # Technology Used
 <ul>
